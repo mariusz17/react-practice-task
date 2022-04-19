@@ -4,7 +4,7 @@ Stores maximum 5 employees' names (when 5 is reached, submit button goes grey).
 Remove and highlight record to be removed, when mouse over delete button.
 Error message if name or surname is empty.
 
-Context stores data and functions.
+Used Context for data and functions.
 
 # Getting Started with Create React App
 
