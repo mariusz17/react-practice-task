@@ -53,8 +53,8 @@ function EmployeeForm() {
 				<button type="submit" disabled={isSubmitDisabled}>
 					Submit
 				</button>
-				<p className="error-message">{errorMessage}</p>
 			</form>
+			<p className="error-message">{errorMessage}</p>
 		</div>
 	);
 }
