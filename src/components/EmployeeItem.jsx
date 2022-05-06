@@ -1,9 +1,8 @@
-import { useContext, useState, useRef } from "react";
+import { useContext, useRef } from "react";
 import EmployeeContext from "../context/EmployeeContext";
 
 function EmployeeItem({ item }) {
 	const { deleteEmployee } = useContext(EmployeeContext);
-	const [isHighlighted, setIsHighlighted] = useState(false);
 	const li = useRef();
 
 	const toggleHighlight = () => {
