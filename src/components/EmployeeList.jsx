@@ -4,6 +4,7 @@ import EmployeeItem from "./EmployeeItem";
 
 function EmployeeList() {
 	const { employeeList } = useContext(EmployeeContext);
+
 	return (
 		<div className="employee-list">
 			<h2>Employee List</h2>

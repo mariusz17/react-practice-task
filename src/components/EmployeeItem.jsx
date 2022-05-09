@@ -3,17 +3,14 @@ import EmployeeContext from "../context/EmployeeContext";
 
 function EmployeeItem({ item }) {
 	const { deleteEmployee } = useContext(EmployeeContext);
-	const li = useRef();
+	const liItem = useRef();
 
 	const toggleHighlight = () => {
-		li.current.classList.toggle("highlighted");
-	}
+		liItem.current.classList.toggle("highlighted");
+	};
+
 	return (
-		<li
-			ref={li}
-			data-id={item.id}
-			className="employee-item"
-		>
+		<li ref={liItem} data-id={item.id} className="employee-item">
 			<p className="employee-data">
 				{item.name} {item.surname}
 			</p>
